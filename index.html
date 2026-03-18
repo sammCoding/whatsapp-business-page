@@ -5,34 +5,69 @@
   <title>Nombre del Negocio</title>
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      background: #f5f5f5;
+      font-family: Arial;
+      background: #111;
+      color: white;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/800x400/?burger') center/cover;
+      padding: 80px 20px;
       text-align: center;
     }
-    header {
-      background: #ff4d4d;
-      color: white;
-      padding: 20px;
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
     }
+
+    header p {
+      font-size: 18px;
+      color: #ddd;
+    }
+
     section {
-      padding: 20px;
+      padding: 30px 20px;
+      text-align: center;
     }
+
     .menu {
-      background: white;
-      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #222;
+      border-radius: 15px;
+      width: 250px;
       padding: 15px;
+    }
+
+    .card img {
+      width: 100%;
       border-radius: 10px;
     }
+
     .btn {
       display: inline-block;
-      margin-top: 15px;
-      padding: 15px;
+      margin-top: 20px;
+      padding: 15px 25px;
       background: #25D366;
       color: white;
       text-decoration: none;
       border-radius: 10px;
       font-size: 18px;
+    }
+
+    footer {
+      background: #000;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
     }
   </style>
 </head>
@@ -43,11 +78,29 @@
   <p>Las mejores hamburguesas de la ciudad</p>
 </header>
 
-<section class="menu">
-  <h2>Menú</h2>
-  <p>🍔 Hamburguesa clásica - $3</p>
-  <p>🍟 Papas fritas - $1.50</p>
-  <p>🥤 Bebida - $1</p>
+<section>
+  <h2>🔥 Nuestro Menú</h2>
+  <div class="menu">
+    
+    <div class="card">
+      <img src="https://images.unsplash.com/300x200/?burger">
+      <h3>Hamburguesa Clásica</h3>
+      <p>$3</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/300x200/?fries">
+      <h3>Papas Fritas</h3>
+      <p>$1.50</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/300x200/?soda">
+      <h3>Bebida</h3>
+      <p>$1</p>
+    </div>
+
+  </div>
 </section>
 
 <section>
@@ -65,6 +118,10 @@
     Pedir por WhatsApp
   </a>
 </section>
+
+<footer>
+  <p>© 2026 Nombre del Negocio</p>
+</footer>
 
 </body>
 </html>
